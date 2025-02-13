@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/productss/tshirts.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>T-SHIRTS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Casual</a></li>
+                <li><a href="#">Trendy</a></li>
+                <li><a href="#">Essentials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>        
+        <section class="hero">
+            <h2>Effortless Style, Maximum Comfort</h2>
+            <p>Discover premium t-shirts designed for versatility and elegance.</p>
+        </section>
+
+        <section class="featured">
+            <h2>Must-Have T-Shirts for Every Wardrobe</h2>
+        </section>
+        
+        <section class="products">
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t1.png' %}" alt="Classic White Tee">
+                <div class="product-info">
+                    <h3>ESSENTIALS</h3>
+                    <p>Perfect for any occasion.</p>
+                    <p>Price: $40</p>
+                    <button class="buy-button" onclick="buyTshirt('ESSENTIALS', 40)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t2.webp' %}" alt="Minimalist Black Tee">
+                <div class="product-info">
+                    <h3>FOG ESSENTIALS</h3>
+                    <p>A sleek essential for any wardrobe.</p>
+                    <p>Price: $45</p>
+                    <button class="buy-button" onclick="buyTshirt('FOG ESSENTIALS', 45)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t3.jpg' %}" alt="Graphic Statement Tee">
+                <div class="product-info">
+                    <h3>Graphic Statement Tee</h3>
+                    <p>A good minimalist style.</p>
+                    <p>Price: $20</p>
+                    <button class="buy-button" onclick="buyTshirt('Graphic Statement Tee', 20)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="products">
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t4.jpg' %}" alt="Classic White Tee">
+                <div class="product-info">
+                    <h3>Hyperglam Rib Tee</h3>
+                    <p>women's weightlifting blue tone.</p>
+                    <p>Price: $30</p>
+                    <button class="buy-button" onclick="buyTshirt('Hyperglam Rib Tee', 30)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t5.jpg' %}" alt="Minimalist Black Tee">
+                <div class="product-info">
+                    <h3>Hyperglam Rib Tee</h3>
+                    <p>women's weightlifting violet tone.</p>
+                    <p>Price: $30</p>
+                    <button class="buy-button" onclick="buyTshirt('Hyperglam Rib Tee', 30)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t6.jpg' %}" alt="Graphic Statement Tee">
+                <div class="product-info">
+                    <h3>Hyperglam Rib Tee</h3>
+                    <p>women's weightlifting Aurora Ruby.</p>
+                    <p>Price: $30</p>
+                    <button class="buy-button" onclick="buyTshirt('Hyperglam Rib Tee', 30)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="products">
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t7.jpg' %}" alt="Classic White Tee">
+                <div class="product-info">
+                    <h3>Adicolor Classics</h3>
+                    <p>Timeless, versatile, and elegant.</p>
+                    <p>Price: $40</p>
+                    <button class="buy-button" onclick="buyTshirt('Adicolor Classics', 40)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t8.jpg' %}" alt="Minimalist Black Tee">
+                <div class="product-info">
+                    <h3>Adicolor Classics</h3>
+                    <p>A sleek essential for any wardrobe.</p>
+                    <p>Price: $40</p>
+                    <button class="buy-button" onclick="buyTshirt('Adicolor Classics', 40)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t9.jpg' %}" alt="Graphic Statement Tee">
+                <div class="product-info">
+                    <h3>Adicolor Classics</h3>
+                    <p>Perfect for everyday use.</p>
+                    <p>Price: $40</p>
+                    <button class="buy-button" onclick="buyTshirt('Adicolor Classics', 40)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="products">
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t10.jpg' %}" alt="Classic White Tee">
+                <div class="product-info">
+                    <h3>Three stripes Tee</h3>
+                    <p>Take advantage of the black tone.</p>
+                    <p>Price: $35</p>
+                    <button class="buy-button" onclick="buyTshirt('Three stripes Tee', 35)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t11.jpg' %}" alt="Minimalist Black Tee">
+                <div class="product-info">
+                    <h3>Three stripes Tee</h3>
+                    <p>Take advantage of the red tone.</p>
+                    <p>Price: $35</p>
+                    <button class="buy-button" onclick="buyTshirt('Three stripes Tee', 35)">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{% static 'images/tshirts_images/t12.jpg' %}" alt="Graphic Statement Tee">
+                <div class="product-info">
+                    <h3>Three stripes Tee</h3>
+                    <p>Take advantage of the white tone.</p>
+                    <p>Price: $35</p>
+                    <button class="buy-button" onclick="buyTshirt('Three stripes Tee', 35)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+            <p>&copy; 2025 Interactive Store. All rights reserved.</p>
+        </footer>
+
+    <script>
+        function buyTshirt(name, price) {
+            alert(`You have purchased ${name} for $${price}!`);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Interactive Store{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Interactive Store</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products/">Products</a></li>
+  <!--              <li><a href="/About_Us/">About_Us</a></li> -->
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Our Store</h2>
+            <p>Explore the best products here. Browse our collection and find your favorites.</p>
+            <a href="/products/" class="cta-button">Shop Now</a>
+        </div>
+    </div>
+</body>
+</html>
+
+  <!--  j -->

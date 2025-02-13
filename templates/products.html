@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Interactive Store</title> 
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/products.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/products/">Products</a></li>
+             <!-- <li><a href="/about/">About_Us</a></li> -->
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Explore our collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="{% static 'images/product1.jpg' %}" alt="Shoes">
+                <h3>Shoes</h3>
+                
+                <a href="{% url 'shoes' %}"><button>See more</button></a>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/product2.jpg' %}" alt="Coats">
+                <h3>Coats</h3>
+                
+                <a href="{% url 'coats' %}"><button>See more</button></a>
+            </div>
+            <div class="product">
+                <img src="{% static 'images/product3.webp' %}" alt="T-shirts">
+                <h3>T-shirts</h3>
+
+                <a href="{% url 'tshirts' %}"><button>See more</button></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

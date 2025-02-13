@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes - Interactive Store</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/productss/shoes.css' %}">
+    
+</head>
+<body>
+    <header>
+        <h1>Shoes Collection</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Style</a></li>
+                <li><a href="#">Comfort</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Discover Your Perfect Pair</h2>
+        <p class="subtitle">From casual to performance, explore a curated selection of shoes designed to suit every style and need.</p>
+        <div class="shoes-grid">
+                
+            <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe3a.webp' %}" alt="Shoe 3">
+                    <img src="{% static 'images/shoes_images/shoe3b.webp' %}" alt="Shoe 3 Alternate">
+                </div>
+                <h3>Nike Air Force 1</h3>
+                <p>Price: $115</p>
+                <p>High-performance sneakers for a good lifestyle.</p>
+                <button class="buy-button" onclick="buyShoe('Nike Air Force 1', 115)">Buy Now</button>
+            </div>
+            
+            <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe4a.jpg' %}" alt="Shoe 4">
+                    <img src="{% static 'images/shoes_images/shoe4b.webp' %}" alt="Shoe 4 Alternate">
+                </div>
+                <h3>Nike Air Force 1</h3>
+                <p>Price: $115</p>
+                <p>High-performance sneakers for a good lifestyle.</p>
+                <button class="buy-button" onclick="buyShoe('Nike Air Force 1', 115)">Buy Now</button>
+            </div>
+             
+             <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe5a.png' %}" alt="Shoe 5">
+                    <img src="{% static 'images/shoes_images/shoe5b.jpg' %}" alt="Shoe 5 Alternate">
+                </div>
+                <h3>Dolce  Gabbana</h3>
+                <p>Price: $750</p>
+                <p>Luxury high-end shoes for an elegant and sophisticated lifestyle.</p>
+                <button class="buy-button" onclick="buyShoe('Dolce  Gabbana', 750)">Buy Now</button>
+            </div>
+             
+             <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe6a.jpg' %}" alt="Shoe 6">
+                    <img src="{% static 'images/shoes_images/shoe6b.jpg' %}" alt="Shoe 6 Alternate">
+                </div>
+                <h3>Dolce  Gabbana</h3>
+                <p>Price: $530</p>
+                <p>Luxury high-end shoes for an elegant and sophisticated lifestyle.</p>
+                <button class="buy-button" onclick="buyShoe('Dolce  Gabbana', 530)">Buy Now</button>
+            </div>
+            
+             <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe7a.jpg' %}" alt="Shoe 7">
+                    <img src="{% static 'images/shoes_images/shoe7b.jpg' %}" alt="Shoe 7 Alternate">
+                </div>
+                <h3>Jordan 4</h3>
+                <p>Price: $190</p>
+                <p>Iconic high-performance sneakers for style and action.</p>
+                <button class="buy-button" onclick="buyShoe('Jordan 4', 190)">Buy Now</button>
+            </div>
+           
+            <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe8a.jpg' %}" alt="Shoe 8">
+                    <img src="{% static 'images/shoes_images/shoe8b.jpeg' %}" alt="Shoe 9 Alternate">
+                </div>
+                <h3>Jordan 4</h3>
+                <p>Price: $190</p>
+                <p>Iconic high-performance sneakers for style and action.</p>
+                <button class="buy-button" onclick="buyShoe('Jordan 4', 190)">Buy Now</button>
+            </div>
+            <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe9a.webp' %}" alt="Shoe 9">
+                    <img src="{% static 'images/shoes_images/shoe9b.webp' %}" alt="Shoe 9 Alternate">
+                </div>
+                <h3>Jordan 11</h3>
+                <p>Price: $190</p>
+                <p>Iconic high-performance sneakers for style and action.</p>
+                <button class="buy-button" onclick="buyShoe('Jordan 4', 190)">Buy Now</button>
+            </div>
+            <div class="shoe">
+                <div class="shoe-slider">
+                    <img src="{% static 'images/shoes_images/shoe10a.webp' %}" alt="Shoe 10">
+                    <img src="{% static 'images/shoes_images/shoe10b.jpeg' %}" alt="Shoe 10 Alternate">
+                </div>
+                <h3>Jordan 11</h3>
+                <p>Price: $190</p>
+                <p>Iconic high-performance sneakers for style and action.</p>
+                <button class="buy-button" onclick="buyShoe('Jordan 4', 190)">Buy Now</button>
+            </div>
+           
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Interactive Store. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('.shoe-slider').forEach(slider => {
+            let images = slider.querySelectorAll('img');
+        
+            slider.addEventListener('mouseenter', () => {
+                images[0].style.display = 'none'; 
+                images[1].style.display = 'block'; 
+            });
+        
+            slider.addEventListener('mouseleave', () => {
+                images[0].style.display = 'block'; 
+                images[1].style.display = 'none'; 
+            });
+        });
+
+        function buyShoe(name, price) {
+            alert(`You have purchased ${name} for $${price}!`);
+        }        
+    </script>
+</body>
+</html>
