@@ -7,9 +7,9 @@ Sections for Coats, Shoes, and T-Shirts
 "Contact Us" page with a functional form 
 
 ## 🚀 Technologies
--Back-end: Django, Python, Javascrip.
--Front-end: HTML, CSS.
--Database: SQLite.
+- Back-end: Django, Python, Javascrip.
+- Front-end: HTML, CSS.
+- Database: SQLite.
 
 ## 🎯 Purpose
 This project was created as part of my portfolio to showcase my skills in Django and web development.
