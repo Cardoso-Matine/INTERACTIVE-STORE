@@ -1,1 +1,1 @@
-web: gunicorn interactive_store:app
+web: gunicorn interactive_store.wsgi:application
