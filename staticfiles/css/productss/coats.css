@@ -1,0 +1,153 @@
+/* Reset */
+.featured-image img {
+    width: 85vw; /* Define uma largura fixa */
+    height: 650px; /* Mantém a proporção */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    border-bottom: 2px solid #000;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Destaque */
+.featured {
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+   
+}
+
+.featured h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+
+/* Detalhes do casaco */
+.coat-details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.coat-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.coat-image img {
+    width: 20vw; /* Ajuste o tamanho conforme necessário */
+    height: 300px;
+}
+
+.coat-info {
+    flex: 1; /* Faz o bloco de informações ocupar o espaço restante */
+}
+
+.coat-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.coat-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.purchase-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.purchase-form label,
+.purchase-form select,
+.purchase-form button {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.purchase-form button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.purchase-form button:hover {
+    background-color: #444;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
