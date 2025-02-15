@@ -19,9 +19,6 @@ def coats(request):
 def tshirts(request):
     return render(request, 'productss/tshirts.html')
 
-# def About_Us(request):
-  #   return render(request, 'About_Us.html')
-
 def contact(request):
     return render(request, 'contact.html')
 
