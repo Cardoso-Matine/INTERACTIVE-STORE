@@ -1,5 +1,8 @@
 # Interactive Store 🛍️
-An interactive online store developed with Django. The project provides a smooth browsing and shopping experience.
+An interactive online store built with Django, designed to offer a seamless browsing and shopping experience.
+
+This project showcases a modern, well-structured online store where users can explore different clothing collections, including coats, shoes, and t-shirts. The store is designed with a minimalist aesthetic, ensuring a clean and intuitive interface.
+It features organized navigation, dynamic product displays, and a user-friendly contact section.
 
 ## 📌 Features
 Homepage design inspired by ELLE
