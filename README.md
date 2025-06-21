@@ -3,6 +3,7 @@ An interactive online store built with Django, designed to offer a seamless brow
 
 This project showcases a modern, well-structured online store where users can explore different clothing collections, including coats, shoes, and t-shirts. The store is designed with a minimalist aesthetic, ensuring a clean and intuitive interface.
 It features organized navigation, dynamic product displays, and a user-friendly contact section.
+
 👉 Live Demo: https://interactive-store.onrender.com/
 
 ##  Features
